@@ -18,13 +18,13 @@ export const metadata: Metadata = {
     title: "Free PDF Merger - Merge PDF Files Online, No Watermark",
     description:
       "Merge multiple PDF files into one. Fast, secure, and completely free. All processing happens in your browser — your files never leave your device.",
-    url: "https://yourdomain.com",
+    url: "https://pdfmerge.telephant.club",
     siteName: "Free PDF Merger",
     locale: "en_US",
     type: "website",
   },
   alternates: {
-    canonical: "https://yourdomain.com",
+    canonical: "https://pdfmerge.telephant.club",
   },
 };
 
@@ -35,7 +35,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "WebApplication",
     name: "PDF Merge Tool",
-    url: "https://yourdomain.com",
+    url: "https://pdfmerge.telephant.club",
     applicationCategory: "Utility",
     operatingSystem: "All",
     description:

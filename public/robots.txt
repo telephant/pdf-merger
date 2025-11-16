@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://pdfmerge.telephant.club
+
+# Sitemaps
+Sitemap: https://pdfmerge.telephant.club/sitemap.xml
