@@ -144,8 +144,8 @@ export default function HorizontalPageStrip({
 
   return (
     <div className="bg-white border-t border-gray-200 p-4">
-      <div className="flex items-center justify-between mb-3">
-        <h3 className="text-sm font-medium text-gray-900">
+      <div className="flex items-center mb-3">
+        <h3 className="text-sm font-medium text-gray-900 mr-2">
           Page Order ({pages.length} pages)
         </h3>
         <p className="text-xs text-gray-500">

@@ -94,7 +94,7 @@ export default function Home() {
             <div className="text-center mb-12">
               <h1 className="text-5xl font-bold text-gray-900 mb-4">Merge PDF Files Online</h1>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                Combine multiple PDF documents into a single file. Fast, free, and secure.
+                Combine multiple PDF files easily with our free online PDF merger. No signup, no watermark, just drag and drop your files.
               </p>
             </div>
             
@@ -107,6 +107,13 @@ export default function Home() {
         <div className="h-screen flex flex-col">
           {/* Main content area */}
           <div className="flex-1 flex flex-col min-h-0">
+            {/* Horizontal page strip at bottom */}
+            <HorizontalPageStrip
+              pages={sortablePages}
+              files={pdfFiles}
+              onPagesReorder={handlePagesReorder}
+              onPageRemove={handlePageRemove}
+            />
             {/* Main PDF viewer and sidebar */}
             <div className="flex-1 flex min-h-0">
               {/* Main PDF viewer */}
@@ -128,13 +135,6 @@ export default function Home() {
               </div>
             </div>
             
-            {/* Horizontal page strip at bottom */}
-            <HorizontalPageStrip
-              pages={sortablePages}
-              files={pdfFiles}
-              onPagesReorder={handlePagesReorder}
-              onPageRemove={handlePageRemove}
-            />
           </div>
         </div>
       )}

@@ -1,13 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  experimental: {
-    turbo: {
-      resolveAlias: {
-        canvas: false,
-      },
-    },
-  },
+  turbopack: {},
   webpack: (config) => {
     config.resolve.alias = {
       ...config.resolve.alias,

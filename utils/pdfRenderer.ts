@@ -32,6 +32,7 @@ export async function generateHighQualityImage(
     const renderContext = {
       canvasContext: context,
       viewport: viewport,
+      canvas,
     };
     
     await page.render(renderContext).promise;
@@ -75,6 +76,7 @@ export async function generateThumbnail(
     const renderContext = {
       canvasContext: context,
       viewport: viewport,
+      canvas,
     };
     
     await page.render(renderContext).promise;
