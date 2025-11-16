@@ -9,6 +9,10 @@ const nextConfig: NextConfig = {
     };
     return config;
   },
+  output: 'export', // enable static export
+  images: {
+    unoptimized: true, // close image optimization
+  },
 };
 
 export default nextConfig;
