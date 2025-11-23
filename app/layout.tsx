@@ -56,17 +56,14 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2533585952818438"
+          crossOrigin="anonymous"/>
       </head>
       <body className="antialiased">
         <Header />
         <main className="min-h-[calc(100vh-4rem)]">{children}</main>
         <Footer />
       </body>
-      <Script
-        async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2533585952818438"
-        crossOrigin="anonymous"
-      />
     </html>
   );
 }
