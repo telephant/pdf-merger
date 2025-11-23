@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -52,12 +51,11 @@ export default function RootLayout({
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1"
         />
+        <meta name="google-adsense-account" content="ca-pub-2533585952818438"></meta>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2533585952818438"
-          crossOrigin="anonymous"/>
       </head>
       <body className="antialiased">
         <Header />
