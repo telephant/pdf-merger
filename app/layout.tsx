@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Script from "next/script";
+
 
 export const metadata: Metadata = {
   title: "Free PDF Merger - Merge PDF Files Online, No Watermark",
@@ -61,6 +63,11 @@ export default function RootLayout({
         <main className="min-h-[calc(100vh-4rem)]">{children}</main>
         <Footer />
       </body>
+      <Script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2533585952818438"
+        crossOrigin="anonymous"
+      />
     </html>
   );
 }
